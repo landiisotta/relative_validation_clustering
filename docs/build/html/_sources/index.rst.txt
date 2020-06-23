@@ -12,7 +12,6 @@ a clustering algorithm into a supervised classification problem and selects the 
 that lead to the minimum expected misclassification error, i.e., stability.
 
 This library allows to:
-
 1. Select any classification algorithm from ``sklearn`` library;
 2. Select a clustering algorithm with ``n_clusters`` parameter, i.e., choose among ``sklearn.cluster.KMeans``,
 ``sklearn.cluster.AgglomerativeClustering``, ``sklearn.cluster.SpectralClustering``;
@@ -20,11 +19,11 @@ This library allows to:
 4. Test the final model on an held-out dataset.
 
 Underlying mathematics can be found in (Lange et al., 2004), whereas code can be found on `github
-<https://github.com>`__.
+<https://github.com/IIT-LAND/relative_validation_clustering>`__.
 
 The analysis steps performed by ``reval`` package are displayed below.
 
-.. image:: revalpipeline.png
+.. image:: images/revalpipeline.png
 
 Lange, T., Roth, V., Braun, M. L., & Buhmann, J. M. (2004).
 Stability-based validation of clustering solutions. *Neural computation*, 16(6), 1299-1323.

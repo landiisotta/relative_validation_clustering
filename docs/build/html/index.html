@@ -159,15 +159,13 @@
 It leverages a stability-based relative clustering validation method (Lange et al., 2004) that transforms
 a clustering algorithm into a supervised classification problem and selects the number of clusters
 that lead to the minimum expected misclassification error, i.e., stability.</p>
-<p>This library allows to:</p>
-<ol class="arabic simple">
-<li><p>Select any classification algorithm from <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> library;</p></li>
-</ol>
-<p>2. Select a clustering algorithm with <code class="docutils literal notranslate"><span class="pre">n_clusters</span></code> parameter, i.e., choose among <code class="docutils literal notranslate"><span class="pre">sklearn.cluster.KMeans</span></code>,
+<p>This library allows to:
+1. Select any classification algorithm from <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> library;
+2. Select a clustering algorithm with <code class="docutils literal notranslate"><span class="pre">n_clusters</span></code> parameter, i.e., choose among <code class="docutils literal notranslate"><span class="pre">sklearn.cluster.KMeans</span></code>,
 <code class="docutils literal notranslate"><span class="pre">sklearn.cluster.AgglomerativeClustering</span></code>, <code class="docutils literal notranslate"><span class="pre">sklearn.cluster.SpectralClustering</span></code>;
 3. Perform <em>k</em>-fold cross-validation to determine the best number of clusters;
 4. Test the final model on an held-out dataset.</p>
-<p>Underlying mathematics can be found in (Lange et al., 2004), whereas code can be found on <a class="reference external" href="https://github.com">github</a>.</p>
+<p>Underlying mathematics can be found in (Lange et al., 2004), whereas code can be found on <a class="reference external" href="https://github.com/IIT-LAND/relative_validation_clustering">github</a>.</p>
 <p>The analysis steps performed by <code class="docutils literal notranslate"><span class="pre">reval</span></code> package are displayed below.</p>
 <img alt="_images/revalpipeline.png" src="_images/revalpipeline.png" />
 <p>Lange, T., Roth, V., Braun, M. L., &amp; Buhmann, J. M. (2004).
